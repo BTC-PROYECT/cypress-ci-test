@@ -1,0 +1,16 @@
+name: say hello
+
+# Se define el evento
+on: 
+  push: 
+    branches: 
+      - main
+
+# se define el trabajo o lo que queremos que el workflow haga
+jobs: 
+  hello_world: # nombre del trabajo
+    runs-on: ubuntu-latest # sistema operativo en el que se ejecutará el trabajo
+    steps: 
+      - name: Say hello world in the console # Los nombres son opcionales
+        run: echo "Hello world"
+
