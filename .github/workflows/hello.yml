@@ -14,3 +14,5 @@ jobs:
       - name: Say hello world in the console # Los nombres son opcionales
         run: echo "Hello world"
 
+       run: ls -l
+
